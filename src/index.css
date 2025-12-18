@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.input-field {
+  @apply w-full rounded-md border border-gray-300 px-3 py-2
+         shadow-sm
+         placeholder-gray-400
+         focus:border-blue-500
+         focus:ring-1
+         focus:ring-blue-500
+         focus:shadow-md
+         outline-none
+         transition;
+}
